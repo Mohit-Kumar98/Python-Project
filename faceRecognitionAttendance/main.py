@@ -12,14 +12,14 @@ mohit_img = face_recognition.load_image_file("faces/mohit.png")
 # face encoding image ko number mein convert kar rahe hai so that it is easier to compare.
 mohit_encoding = face_recognition.face_encodings(mohit_img)[0]
 
-# nitin_img = face_recognition.load_image_file("faces/nitin.png")
-# nitin_encoding = face_recognition.face_encodings(nitin_img)[0]
+nitin_img = face_recognition.load_image_file("faces/nitin.png")
+nitin_encoding = face_recognition.face_encodings(nitin_img)[0]
 
-# known_face_encodings = [mohit_encoding, nitin_encoding]
-# known_face_name = ["Mohit", "Nitin"]
+known_face_encodings = [mohit_encoding, nitin_encoding]
+known_face_name = ["Mohit", "Nitin"]
 
-known_face_encodings = [mohit_encoding]
-known_face_name = ["Mohit"]
+# known_face_encodings = [mohit_encoding]
+# known_face_name = ["Mohit"]
 
 # list of expected student
 students = known_face_name.copy()
